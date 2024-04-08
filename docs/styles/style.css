@@ -1,0 +1,407 @@
+/* 폰트  */
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 노멀라이즈 */
+body,
+p,
+ul,
+li,
+a,
+button,
+h1,
+h2,
+h3 {
+  border: 0;
+  background-color: transparent;
+  font-family: "NanumSquareNeo-Variable", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+}
+
+/* 라이브러리 */
+
+.scroll_wrap {
+  overflow: hidden;
+}
+.scroll_on {
+  opacity: 0;
+  transition: all 2s;
+}
+.scroll_on.active {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+.scroll_on.type_top {
+  transform: translate(0, -50px);
+}
+.scroll_on.type_bottom {
+  transform: translate(0, 50px);
+}
+.scroll_on.type_left {
+  transform: translate(-50px, 0);
+}
+.scroll_on.type_right {
+  transform: translate(50px, 0);
+}
+
+/* 커스텀 */
+section {
+  margin-bottom: 200px;
+  position: relative;
+}
+section:last-of-type {
+  margin: 0;
+}
+section .container {
+  position: relative;
+  width: 1500px;
+  height: 1080px;
+  margin: 0 auto;
+}
+.explanation {
+  top: 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.explanation h1 {
+  color: #2b471c;
+}
+.explanation h3 {
+  color: #2b471c;
+}
+
+.content-1::after {
+  left: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #2b471c;
+  transition: all 2s;
+}
+
+/* 공원 개장하고 들어가는 느낌과 비슷해서 넣은 효과입니다. */
+.content-1.close::after {
+  width: 0;
+}
+.content-1 h1 {
+  position: absolute;
+  top: 80px;
+}
+.content-1 .portfolio-explain {
+  position: absolute;
+  top: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.content-1 .portfolio-explain h2 {
+  font-weight: 500;
+}
+.content-1 .main-image {
+  position: relative;
+  min-height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto;
+}
+.content-1 .main-image .logo {
+  background-image: url("https://ifh.cc/g/nYoYyJ.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 620px;
+  height: 180px;
+}
+.content-1 .main-image .light {
+  top: 150px;
+  left: 480px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #b1ef2c;
+  width: 134px;
+  height: 134px;
+  filter: blur(50px);
+  opacity: 0;
+}
+.content-1 .main-image p {
+  margin: 20px 0 0 0;
+  width: 620px;
+  font-size: 22px;
+  color: #6aae45;
+  font-weight: bold;
+}
+.content-1 .main-image .mock-up-image {
+  z-index: -1;
+  background-image: url("../images/mock-up-images.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 719px;
+  width: 1005px;
+}
+.content-1 a {
+  width: 365px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: #6aae45;
+  color: white;
+  bottom: 70px;
+  left: 50%;
+  transform: translatex(-50%);
+  position: absolute;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.content-1 a:hover {
+  background-color: #87d15f;
+}
+.content-2 .container {
+  height: 900px;
+}
+.content-2 .explanation {
+  width: 480px;
+}
+.content-2 .solution {
+  position: absolute;
+  top: 220px;
+}
+.content-2 .solution {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content-2 .solution div {
+  border-radius: 30px;
+  padding: 30px;
+  width: 370px;
+  border: 4px solid blue;
+}
+.content-2 .solution div:first-child {
+  border: 4px solid #a9a9a9;
+}
+.content-2 .solution div:last-child {
+  border: 4px solid #6aae45;
+}
+.content-2 .solution ul {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content-2 .solution i {
+  margin: 0 auto;
+  font-size: 30px;
+}
+.content-2 .original-image {
+  background-image: url("../images/site-original.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 876px;
+  height: 721px;
+}
+.content-2 .original-image h3 {
+  top: -40px;
+  bottom: 0;
+  position: absolute;
+}
+.content-3 .tone-and-manner-explanation {
+  padding: 0 30px;
+  border-left: 1px solid #cecece;
+  right: 0;
+  bottom: 30px;
+  width: 430px;
+}
+.content-3 .wireframe {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  gap: 30px;
+}
+.content-3 .wireframe span {
+  display: flex;
+  flex-direction: column;
+}
+.content-3 .wireframe span p:nth-child(1) {
+  margin-top: 120px;
+}
+.content-3 .wireframe span p:nth-child(2) {
+  margin-top: 140px;
+}
+.content-3 .wireframe span p:nth-child(3) {
+  margin-top: 108px;
+}
+.content-3 .wireframe span p:nth-child(4) {
+  margin-top: 80px;
+}
+.content-3 .wireframe-explanation span {
+  width: 420px;
+}
+.content-3 .wireframe-image {
+  background-image: url("../images/figma-wireframe.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 286px;
+  height: 798px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.content-3 .color-box {
+  margin: 20px 0 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.content-3 .color-box div {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cecece;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.content-3 .color-box div:nth-child(1) {
+  background-color: #85aa71;
+}
+.content-3 .color-box div:nth-child(2) {
+  background-color: #2b471c;
+}
+.content-3 .color-box div:nth-child(3) {
+  background-color: #6aae45;
+}
+.content-3 .component {
+  margin-top: 40px;
+}
+.content-3 .component-image {
+  margin: 20px 0 20px 0;
+  background-image: url("../images/component.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 200px;
+}
+.content-4 .container {
+  height: 3900px;
+}
+.content-4 h1 {
+  margin-top: 50px;
+}
+.content-4 span {
+  display: flex;
+  flex-direction: column;
+
+  width: 620px;
+  position: absolute;
+  right: -30px;
+}
+.content-4 span p:nth-child(1) {
+  margin-top: 500px;
+}
+.content-4 span p:nth-child(2) {
+  margin-top: 350px;
+}
+.content-4 span p:nth-child(3) {
+  margin-top: 850px;
+}
+.content-4 span p:nth-child(4) {
+  margin-top: 500px;
+}
+.content-4 span p:nth-child(5) {
+  margin-top: 400px;
+}
+.content-4 span p:nth-child(6) {
+  margin-top: 660px;
+}
+.content-4 .site-image {
+  position: absolute;
+  top: 100px;
+  background-image: url("../images/namju-shop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 861px;
+  height: 3527px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.content-5 {
+  position: relative;
+}
+.content-5 .container {
+  height: 2800px;
+}
+.content-5 .responsive-images {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translatex(-50%);
+  display: flex;
+  gap: 120px;
+}
+.content-5 .pc-image {
+  margin-top: 20px;
+  background-image: url("../images/namju-shop-pc.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 464px;
+  height: 2221px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.content-5 .tablet-image {
+  margin-top: 20px;
+  background-image: url("../images/namju-shop-mini.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 294px;
+  height: 2221px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.content-5 .mobile-image {
+  margin-top: 20px;
+  background-image: url("../images/namju-shop-se.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 128px;
+  height: 2221px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.content-5 .greetings {
+  position: absolute;
+  left: 43%;
+  bottom: 150px;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer button {
+  gap: 10px;
+  cursor: pointer;
+  background-color: #2b471c;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

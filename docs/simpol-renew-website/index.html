@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>심폴 최대식물매장</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- 폰트어썸 라이브러리 -->
+    <script
+      src="https://kit.fontawesome.com/72b89cfc49.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 스와이퍼 라이브러리 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 제이쿼리 라이브러리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header id="header">
+      <div class="header-con">
+        <div class="header-logo">
+          <a href="#"
+            ><svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 135.6 36.2"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #6aae28;
+                  }
+
+                  .cls-2 {
+                    fill: #38312f;
+                  }
+
+                  .cls-3 {
+                    fill: #37312f;
+                  }
+
+                  .cls-4 {
+                    fill: #393331;
+                  }
+
+                  .cls-5 {
+                    fill: #37302e;
+                  }
+                </style>
+              </defs>
+              <path
+                class="cls-1"
+                d="M21.4,33.5c3-4.9,2.8-8.4-.9-11.4.8,2.8,1.9,5.6.2,8.5a10.4,10.4,0,0,1-7.4,5.2C5.4,37.2.7,35,0,29.5c2.9,1.7,4.7,4.8,8.3,4.9s5.9-1.6,4.4-5.6-2.9-7-4.3-10.5-.6-5.8.8-8.6c3.8-7,15.5-11.6,23-9,2,.7,3.9,1.5,4.4,4.5-3.1-.3-4.5-3.2-7.3-3.3-4.5-.2-6.3,1.8-4.7,6,.9,2.4,2.2,4.8,3.2,7.2C31.4,23.5,30.2,27.5,21.4,33.5Z"
+              />
+              <path
+                class="cls-2"
+                d="M42.5,25.5V20.1c.1-7.6,4.4-10.8,11.3-8.3,1.8.6,2.8.1,4.2-.4,5.3-1.8,9.9,1,10.3,6.6s0,10.3.2,15.4c0,2.1-.9,2.5-2.7,2.6s-2.5-1-2.4-2.8V19.8c0-2-.4-3.8-2.8-3.8S58,18,58,19.9c0,4,.1,8,0,11.9,0,1.8,1,4.1-2.5,4.2s-2.8-2-2.8-3.9V19.6c0-2-.4-3.8-2.9-3.6s-2.4,1.8-2.4,3.6c0,4.5-.1,8.9,0,13.4.1,2.1-.5,3-2.8,3s-2.1-1.6-2.1-3Z"
+              />
+              <path
+                class="cls-3"
+                d="M119.3,22.5c0-2.8.1-5.6,0-8.4s.1-3.2,2.5-3.1,2.8.9,2.7,2.9c-.1,4.5.2,9,0,13.5s1.1,4.9,4.6,4.6a9.4,9.4,0,0,1,2.9,0c1.5.1,3.6-1,3.6,2s-2.3,1.9-3.6,1.9C118.1,35.8,119.3,37.7,119.3,22.5Z"
+              />
+              <path
+                class="cls-4"
+                d="M33.7,23.1c0-3.2.1-6.3-.1-9.5s1-2.6,3-2.7,2.5,1,2.5,2.8q-.1,9.9,0,19.8c0,2-1,2.5-2.8,2.5s-2.7-.4-2.7-2.5S33.7,26.5,33.7,23.1Z"
+              />
+              <path
+                class="cls-5"
+                d="M104.3,10.8A12.7,12.7,0,0,0,91.6,23.4c0,7.2,5.1,12.5,12.4,12.5s13-5.3,13.1-12.2A12.7,12.7,0,0,0,104.3,10.8ZM104,32a8.2,8.2,0,0,1-7.7-8.7,8.3,8.3,0,0,1,8.2-8.2,8.5,8.5,0,0,1,8,8.5A8.2,8.2,0,0,1,104,32Z"
+              />
+              <path
+                class="cls-5"
+                d="M89.6,17.6C88.3,13.3,84.4,11.1,78,11s-6.5-.1-6.5,6.1V33.5c0,1.5.2,2.6,2.1,2.4s3.4.6,3.1-1.9,1.5-3.1,3.8-3.4C87.9,29.5,91.6,24.2,89.6,17.6ZM79.3,26c-4.9.2-1.2-3.8-2.9-5.1,1.1-1.9-1.6-5.4,2.9-5.1s5.3,1.6,5.3,5S82.5,25.8,79.3,26Z"
+              /></svg
+          ></a>
+        </div>
+        <div class="header-search">
+          <div class="search-bar">
+            <input type="text" placeholder="검색할 단어를 입력하세요." />
+          </div>
+          <div class="search-ico">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 네비게이션 -->
+    <nav id="nav">
+      <div class="nav-con">
+        <ul class="nav-menu">
+          <li><a href="#">미니샵</a></li>
+          <li><a href="#">경매</a></li>
+          <li><a href="#">쿠폰받기</a></li>
+          <li><a href="#">초특가상품</a></li>
+        </ul>
+        <ul class="login">
+          <li class="nav-login"><a href="#">로그인</a></li>
+          <li class="nav-info"><a href="#">고객센터</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 -->
+    <main id="main">
+      <!-- 슬라이더 -->
+      <section id="slider">
+        <div class="slider-con">
+          <div class="top-category-box">
+            <div class="category-div category-div-1">
+              <div class="top-category event-slider">
+                <div class="swiper">
+                  <div class="event-slider-banner-con swiper-wrapper">
+                    <div class="event-slider-banner swiper-slide">
+                      <a href="#"
+                        ><img
+                          src="images/event-banner-1.jpg"
+                          alt="이벤트배너-1"
+                      /></a>
+                    </div>
+                    <div class="event-slider-banner swiper-slide">
+                      <a href="#"
+                        ><img
+                          src="images/event-banner-2.jpg"
+                          alt="이벤트배너-2"
+                      /></a>
+                    </div>
+                    <div class="event-slider-banner swiper-slide">
+                      <a href="#"
+                        ><img
+                          src="images/event-banner-3.jpg"
+                          alt="이벤트배너-3"
+                      /></a>
+                    </div>
+                  </div>
+                  <span class="event-slider-button-group">
+                    <span class="event-slider-button swiper-button__prev">
+                      <i class="fa-solid fa-angle-left"></i>
+                    </span>
+                    <span class="event-slider-button swiper-button__next">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="top-category category-1">
+                <a href="#">
+                  <span>꽃선물</span>
+                </a>
+              </div>
+            </div>
+            <div class="category-div category-div-2">
+              <div class="top-category category-2">
+                <a href="#">
+                  <span>다육식물</span>
+                </a>
+              </div>
+              <div class="top-category category-3">
+                <a href="#">
+                  <span>야생화</span>
+                </a>
+              </div>
+              <div class="top-category category-4">
+                <a href="#">
+                  <span>관엽식물</span>
+                </a>
+              </div>
+            </div>
+            <div class="category-div category-div-3">
+              <div class="top-category category-5">
+                <a href="#">
+                  <span>동ㆍ서양란</span>
+                </a>
+              </div>
+              <div class="top-category category-6">
+                <a href="#">
+                  <span>묘목</span>
+                </a>
+              </div>
+              <div class="top-category category-7">
+                <a href="#">
+                  <span>분재</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 신상품 -->
+      <section class="new-goods">
+        <div class="new-goods-deco left-image"></div>
+        <div class="new-goods-con">
+          <div class="new-goods-top">
+            <div class="new-goods-title">
+              <span>신상품</span>
+              <span>NEW ABOUT</span>
+            </div>
+            <div class="new-goods-topmenu">
+              <button class="active">
+                <p>다육식물/선인장</p>
+              </button>
+              <button>
+                <p>관엽식물</p>
+              </button>
+              <button>
+                <p>동ㆍ서양란</p>
+              </button>
+              <button>
+                <p>야생화/허브/수생/채소</p>
+              </button>
+              <button>
+                <p>분재/분경/수석</p>
+              </button>
+              <button>
+                <p>묘목/초경/인테리어</p>
+              </button>
+              <button>
+                <p>화분자재류</p>
+              </button>
+            </div>
+          </div>
+          <div class="new-goods-subtitle">
+            <span>심폴에 새로 들어온 상품을 확인하세요!</span>
+          </div>
+          <div class="new-goods-cards">
+            <div class="new-goods-cards-con">
+              <div class="flex-grid cards-con cards-1 active">
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-hobbit.jpg" alt="호빗" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">호빗</span>
+                      <span class="goods-price">4,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-whitegreen.jpg"
+                        alt="화이트그린이"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-5"
+                      aria-label="score 5 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">화이트그린이</span>
+                      <span class="goods-price">8,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-moringa.jpg" alt="모린가" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">모린가</span>
+                      <span class="goods-price">4,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-blackrose.jpg" alt="블랙로즈" />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">블랙로즈</span>
+                      <span class="goods-price">6,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grid cards-con cards-2">
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-rosa-orientice.jpg"
+                        alt="로사 오리엔티스"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">로사 오리엔티스</span>
+                      <span class="goods-price">79,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-miltonia.jpg" alt="밀토니아 소품" />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">밀토니아 소품</span>
+                      <span class="goods-price">19,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-cloud.jpg" alt="구름국화" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">구름국화</span>
+                      <span class="goods-price">5,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-niji.jpg" alt="노지월동다년초" />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">노지월동다년초</span>
+                      <span class="goods-price">9,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grid cards-con cards-3">
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-sakura.jpg"
+                        alt="벚나무 겹벚 분묘 개화주"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">벚나무 겹벚 분묘 개화주</span>
+                      <span class="goods-price">49,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-dicalciva.jpeg" alt="디컬시바" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">디컬시바</span>
+                      <span class="goods-price">25,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-rosa-orientice.jpg"
+                        alt="로사 오리엔티스"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">로사 오리엔티스</span>
+                      <span class="goods-price">79,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-cloud.jpg" alt="구름국화" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">구름국화</span>
+                      <span class="goods-price">5,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grid cards-con cards-4">
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-dicalciva.jpeg" alt="디컬시바" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">디컬시바</span>
+                      <span class="goods-price">25,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-niji.jpg" alt="노지월동다년초" />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">노지월동다년초</span>
+                      <span class="goods-price">9,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-dongback-red.jpg"
+                        alt="동백 홍공작"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">동백 홍공작</span>
+                      <span class="goods-price">200,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-sakura.jpg"
+                        alt="벚나무 겹벚 분묘 개화주"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">벚나무 겹벚 분묘 개화주</span>
+                      <span class="goods-price">49,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grid cards-con cards-5">
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-niji.jpg" alt="노지월동다년초" />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">노지월동다년초</span>
+                      <span class="goods-price">9,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-dongback-red.jpg"
+                        alt="동백 홍공작"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">동백 홍공작</span>
+                      <span class="goods-price">200,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-sakura.jpg"
+                        alt="벚나무 겹벚 분묘 개화주"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">벚나무 겹벚 분묘 개화주</span>
+                      <span class="goods-price">49,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-dicalciva.jpeg" alt="디컬시바" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">디컬시바</span>
+                      <span class="goods-price">25,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grid cards-con cards-6">
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-cloud.jpg" alt="구름국화" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">구름국화</span>
+                      <span class="goods-price">5,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-niji.jpg" alt="노지월동다년초" />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">노지월동다년초</span>
+                      <span class="goods-price">9,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-dongback-red.jpg"
+                        alt="동백 홍공작"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">동백 홍공작</span>
+                      <span class="goods-price">200,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-sakura.jpg"
+                        alt="벚나무 겹벚 분묘 개화주"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">벚나무 겹벚 분묘 개화주</span>
+                      <span class="goods-price">49,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grid cards-con cards-7">
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-sakura.jpg"
+                        alt="벚나무 겹벚 분묘 개화주"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">벚나무 겹벚 분묘 개화주</span>
+                      <span class="goods-price">49,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-dicalciva.jpeg" alt="디컬시바" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">디컬시바</span>
+                      <span class="goods-price">25,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-rosa-orientice.jpg"
+                        alt="로사 오리엔티스"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">로사 오리엔티스</span>
+                      <span class="goods-price">79,900원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-cloud.jpg" alt="구름국화" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">구름국화</span>
+                      <span class="goods-price">5,000원</span>
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="more-button">
+            <p>더보기</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 인기상품 -->
+      <section class="popular-goods">
+        <div class="popular-goods-deco right-image"></div>
+        <div class="popular-goods-con">
+          <div class="popular-goods-top">
+            <div class="popular-goods-title">
+              <span>인기상품</span>
+              <span>HOT</span>
+            </div>
+            <div class="popular-goods-subtitle">
+              <span>심폴이 추천하는 인기상품</span>
+            </div>
+          </div>
+          <div class="popular-goods-cards">
+            <div class="popular-goods-cards-con">
+              <div class="flex-grid cards-con cards">
+                <div class="goods-card 1st">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-rose-kamphanula.jpg"
+                        alt="장미캄파눌라"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-5"
+                      aria-label="score 5 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="goods-rank">1st</span>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">장미캄파눌라</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">10,000원</span
+                        ><span class="goods-price-after">8,500원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card 2nd">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-smell-starflower.jpg"
+                        alt="향기별꽃"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="goods-rank">2nd</span>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">향기별꽃</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">5,000원</span
+                        ><span class="goods-price-after">3,800원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card 3rd">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-clemartice.jpg" alt="클레마티스" />
+                    </a>
+                    <ul
+                      class="goods-score score-5"
+                      aria-label="score 5 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="goods-rank">3rd</span>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">클레마티스</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-after">15,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-4-country.jpg" alt="사계국화" />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">사계국화</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">3,800원</span
+                        ><span class="goods-price-after">2,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-troi.png"
+                        alt="목마가렛외목대(베이비핑크)"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">목마가렛외목대</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-after">5,900원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-with-romance.png"
+                        alt="위드로망스제라늄"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">위드로망스제라늄</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-after">10,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/card-germany-4.jpg"
+                        alt="독일장미.4계.노발리스"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">독일장미.4계.노발리스</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">54,990원</span
+                        ><span class="goods-price-after">49,990원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/card-doraji.jpg" alt="솔잎도라지" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">솔잎도라지</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-after">2,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="more-button">
+            <p>더보기</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 기획할인전 -->
+      <section class="discount-goods">
+        <div class="discount-goods-con">
+          <div class="discount-goods-top">
+            <div class="discount-goods-title">
+              <span>기획 할인전</span>
+              <span>OPEN PLANT</span>
+            </div>
+            <div class="discount-goods-subtitle">
+              <span>판매자가 제안하는 알찬 기획할인!</span>
+            </div>
+          </div>
+          <div class="discount-goods-cards">
+            <div class="discount-goods-cards-con swiper">
+              <div class="swiper-wrapper cards-con cards">
+                <div class="goods-card swiper-slide">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/discount-long-glass.jpg"
+                        alt="자생 무늬 긴병꽃풀"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-5"
+                      aria-label="score 5 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">자생 무늬 긴병꽃풀</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">12,000원</span
+                        ><span class="goods-price-after">8,500원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card swiper-slide">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/discount-primula.jpg"
+                        alt="프리뮬라-카피타앵초"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-5"
+                      aria-label="score 5 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">프리뮬라-카피타앵초</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">64,000원</span
+                        ><span class="goods-price-after">50,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card swiper-slide">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/discount-myoengja.jpg" alt="명자나무" />
+                    </a>
+                    <ul
+                      class="goods-score score-5"
+                      aria-label="score 5 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">명자나무</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">11,000원</span
+                        ><span class="goods-price-after">4,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card swiper-slide">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/discount-inside-bird.jpg"
+                        alt="자생 속새"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">자생 속새</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">10,000원</span
+                        ><span class="goods-price-after">8,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card swiper-slide">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/discount-10-set.jpg"
+                        alt="유리호프스 10개셋트"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-3"
+                      aria-label="score 3 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">유리호프스 10개셋트</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">10,000원</span
+                        ><span class="goods-price-after">8,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="goods-card swiper-slide">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/discount-primula.jpg"
+                        alt="프리뮬라-카피타앵초"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-5"
+                      aria-label="score 5 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">프리뮬라-카피타앵초</span>
+                      <span class="goods-price"
+                        ><span class="goods-price-before">64,000원</span
+                        ><span class="goods-price-after">50,000원</span></span
+                      >
+                    </span>
+                    <button class="goods-card-cart-ico">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="more-button">
+            <p>더보기</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 심폴명품관 -->
+      <section class="luxury-goods">
+        <div class="luxury-goods-con">
+          <div class="luxury-goods-top">
+            <div class="luxury-goods-title">
+              <span>심폴명품관</span>
+              <span>PREMIUM</span>
+            </div>
+            <div class="luxury-goods-subtitle">
+              <span>나만의 특별한 상품을 원하시나요?</span>
+            </div>
+          </div>
+          <div class="luxury-goods-cards">
+            <div class="swiper luxury-goods-cards-con">
+              <div class="swiper-wrapper cards-con cards">
+                <div class="swiper-slide goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img src="images/luxary-big-stone.jpg" alt="천관문" />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">천관문</span>
+                    </span>
+                    <span class="goods-price"
+                      ><span class="goods-price-after">10,000,000원</span></span
+                    >
+                  </div>
+                  <div class="goods-card-memo">
+                    첩첩산중의 어느 높은 산을 풍경석과 양지이끼, 무동파 화분으로
+                    연출한 이끼분경 작품입니다.
+                  </div>
+                </div>
+                <div class="swiper-slide goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/luxary-tuljin-dalla.jpg"
+                        alt="털진달래"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name">털진달래</span>
+                    </span>
+                    <span class="goods-price"
+                      ><span class="goods-price-after">10,000,000원</span></span
+                    >
+                  </div>
+                  <div class="goods-card-memo">
+                    수백년을 이모습 이대로 한라산을 지킨 나무같은 모습
+                  </div>
+                </div>
+                <div class="swiper-slide goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/luxary-dojagi-jinback.jpg"
+                        alt="도자기분재 사어천 진백 나무"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name"
+                        >도자기분재 사어천 진백 나무</span
+                      >
+                    </span>
+                    <span class="goods-price"
+                      ><span class="goods-price-after"> 9,800,000원</span></span
+                    >
+                  </div>
+                  <div class="goods-card-memo"></div>
+                </div>
+                <div class="swiper-slide goods-card">
+                  <div class="goods-card-top">
+                    <a href="#" class="goods-picture">
+                      <img
+                        src="images/luxary-big-totus.jpg"
+                        alt="대형 두꺼비 자연석 소나무 석부작"
+                      />
+                    </a>
+                    <ul
+                      class="goods-score score-4"
+                      aria-label="score 4 out of 5"
+                    >
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                      <li><i class="score fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="goods-card-bottom">
+                    <span class="goods-title">
+                      <span class="goods-name"
+                        >대형 두꺼비 자연석 소나무 석부작</span
+                      >
+                    </span>
+                    <span class="goods-price"
+                      ><span class="goods-price-after">10,000,000원</span></span
+                    >
+                  </div>
+                  <div class="goods-card-memo">
+                    자연목 소나무로 연출한 석부작 입니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="more-button">
+            <p>더보기</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 오늘의 주목상품/초특가 -->
+      <section class="today-goods">
+        <div class="today-goods-background">
+          <div class="today-goods-con today-focus-goods-con">
+            <div class="today-goods-top today-focus-goods-top">
+              <div class="today-goods-title">
+                <span>오늘의 주목상품</span>
+                <span>HOT ISSUES</span>
+              </div>
+              <div class="today-goods-subtitle">
+                <span>오늘의 추천상품입니다.</span>
+              </div>
+            </div>
+
+            <div class="today-goods-cards">
+              <div class="today-goods-cards-con">
+                <div class="flex-grid cards-con cards">
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/card-rose-kamphanula.jpg"
+                          alt="장미캄파눌라"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-5"
+                        aria-label="score 5 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">장미캄파눌라</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-before">10,000원</span
+                          ><span class="goods-price-after">8,500원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/card-clemartice.jpg"
+                          alt="클레마티스"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-5"
+                        aria-label="score 5 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">클레마티스</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-after">15,000원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/card-with-romance.png"
+                          alt="위드로망스제라늄"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-4"
+                        aria-label="score 4 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">위드로망스제라늄</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-after">10,000원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img src="images/card-doraji.jpg" alt="솔잎도라지" />
+                      </a>
+                      <ul
+                        class="goods-score score-4"
+                        aria-label="score 4 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">솔잎도라지</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-after">2,000원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="more-button">
+              <p>더보기</p>
+            </a>
+          </div>
+          <div class="today-goods-con today-discount-goods-con">
+            <div class="today-goods-top today-discount-goods-top">
+              <div class="today-goods-title">
+                <span>오늘의 초특가</span>
+                <span></span>
+              </div>
+              <div class="today-goods-subtitle">
+                <span>판매자가 제안하는 신나는 가격!</span>
+              </div>
+            </div>
+
+            <div class="today-goods-cards">
+              <div class="today-goods-cards-con">
+                <div class="flex-grid cards-con cards">
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/today-robellia.jpg"
+                          alt="로벨리아(퍼플블루)"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-4"
+                        aria-label="score 4 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">로벨리아(퍼플블루)</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-before">6,000원</span
+                          ><span class="goods-price-after">4,000원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/today-saxdallance.jpg"
+                          alt="삭스달란스셀마"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-4"
+                        aria-label="score 4 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">삭스달란스셀마</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-after">15,000원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/today-weston-bongsun.jpg"
+                          alt="서양봉선화(흰색)"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-4"
+                        aria-label="score 4 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">서양봉선화(흰색)</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-before">6,900원</span
+                          ><span class="goods-price-after">5,500원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img src="images/today-cigar.jpg" alt="사가 제라늄" />
+                      </a>
+                      <ul
+                        class="goods-score score-4"
+                        aria-label="score 4 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">사가 제라늄</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-before">13,000원</span
+                          ><span class="goods-price-after">12,800원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/today-vaxwell.jpg"
+                          alt="벡스웰골든 제라늄"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-5"
+                        aria-label="score 5 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">벡스웰골든 제라늄</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-before">11,000원</span
+                          ><span class="goods-price-after">10,800원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/today-king-of.jpeg"
+                          alt="킹오브스트라입트"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-4"
+                        aria-label="score 4 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">킹오브스트라입트</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-after">8,900원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/today-pinkcrab.jpg"
+                          alt="핑크게발선인장"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-5"
+                        aria-label="score 5 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">핑크게발선인장</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-before">14,000원</span
+                          ><span class="goods-price-after">12,800원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="goods-card">
+                    <div class="goods-card-top">
+                      <a href="#" class="goods-picture">
+                        <img
+                          src="images/today-angelice-lite.jpg"
+                          alt="엔젤아이스 라이트"
+                        />
+                      </a>
+                      <ul
+                        class="goods-score score-3"
+                        aria-label="score 5 out of 5"
+                      >
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                        <li><i class="score fa-solid fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="goods-card-bottom">
+                      <span class="goods-title">
+                        <span class="goods-name">엔젤아이스 라이트</span>
+                        <span class="goods-price"
+                          ><span class="goods-price-before">7,000원</span
+                          ><span class="goods-price-after">6,800원</span></span
+                        >
+                      </span>
+                      <button class="goods-card-cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="more-button">
+              <p>더보기</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+      <div class="footer-con">
+        <div class="footer-top">
+          <div class="footer-content-1">
+            <ul>
+              <li><a href="#">심폴소개</a></li>
+              <li><a href="#">개인정보취급방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">사업자정보확인</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">주문배송조회</a></li>
+            </ul>
+          </div>
+          <div class="footer-content-2">
+            <address>
+              <p class="footer__address">
+                부산광역시 동구 범일로102번길 16-10 (범일동) 603호
+              </p>
+              <p class="footer__representative">대표이사 이종민</p>
+              <p class="footer__business-number">
+                사업자등록 607-81-54679 | 통신판매 제2017-부산동구-00230호
+              </p>
+              <p class="footer__contact-phone-number">
+                (주)심폴고객센터 070-8680-8811
+              </p>
+              <p class="footer__contact-fax-email">
+                팩스 070-8630-8867이메일 master@simpol.co.kr
+              </p>
+            </address>
+          </div>
+          <div class="footer-content-3">
+            <div class="footer-logo">
+              <svg
+                id="Layer_2"
+                data-name="Layer 2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 135.6 36.2"
+              >
+                <defs>
+                  <style>
+                    .footer-logo-color {
+                      fill: #2b471c;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="footer-logo-color"
+                  d="M21.4,33.5c3-4.9,2.8-8.4-.9-11.4.8,2.8,1.9,5.6.2,8.5a10.4,10.4,0,0,1-7.4,5.2C5.4,37.2.7,35,0,29.5c2.9,1.7,4.7,4.8,8.3,4.9s5.9-1.6,4.4-5.6-2.9-7-4.3-10.5-.6-5.8.8-8.6c3.8-7,15.5-11.6,23-9,2,.7,3.9,1.5,4.4,4.5-3.1-.3-4.5-3.2-7.3-3.3-4.5-.2-6.3,1.8-4.7,6,.9,2.4,2.2,4.8,3.2,7.2C31.4,23.5,30.2,27.5,21.4,33.5Z"
+                />
+                <path
+                  class="footer-logo-color"
+                  d="M42.5,25.5V20.1c.1-7.6,4.4-10.8,11.3-8.3,1.8.6,2.8.1,4.2-.4,5.3-1.8,9.9,1,10.3,6.6s0,10.3.2,15.4c0,2.1-.9,2.5-2.7,2.6s-2.5-1-2.4-2.8V19.8c0-2-.4-3.8-2.8-3.8S58,18,58,19.9c0,4,.1,8,0,11.9,0,1.8,1,4.1-2.5,4.2s-2.8-2-2.8-3.9V19.6c0-2-.4-3.8-2.9-3.6s-2.4,1.8-2.4,3.6c0,4.5-.1,8.9,0,13.4.1,2.1-.5,3-2.8,3s-2.1-1.6-2.1-3Z"
+                />
+                <path
+                  class="footer-logo-color"
+                  d="M119.3,22.5c0-2.8.1-5.6,0-8.4s.1-3.2,2.5-3.1,2.8.9,2.7,2.9c-.1,4.5.2,9,0,13.5s1.1,4.9,4.6,4.6a9.4,9.4,0,0,1,2.9,0c1.5.1,3.6-1,3.6,2s-2.3,1.9-3.6,1.9C118.1,35.8,119.3,37.7,119.3,22.5Z"
+                />
+                <path
+                  class="footer-logo-color"
+                  d="M33.7,23.1c0-3.2.1-6.3-.1-9.5s1-2.6,3-2.7,2.5,1,2.5,2.8q-.1,9.9,0,19.8c0,2-1,2.5-2.8,2.5s-2.7-.4-2.7-2.5S33.7,26.5,33.7,23.1Z"
+                />
+                <path
+                  class="footer-logo-color"
+                  d="M104.3,10.8A12.7,12.7,0,0,0,91.6,23.4c0,7.2,5.1,12.5,12.4,12.5s13-5.3,13.1-12.2A12.7,12.7,0,0,0,104.3,10.8ZM104,32a8.2,8.2,0,0,1-7.7-8.7,8.3,8.3,0,0,1,8.2-8.2,8.5,8.5,0,0,1,8,8.5A8.2,8.2,0,0,1,104,32Z"
+                />
+                <path
+                  class="footer-logo-color"
+                  d="M89.6,17.6C88.3,13.3,84.4,11.1,78,11s-6.5-.1-6.5,6.1V33.5c0,1.5.2,2.6,2.1,2.4s3.4.6,3.1-1.9,1.5-3.1,3.8-3.4C87.9,29.5,91.6,24.2,89.6,17.6ZM79.3,26c-4.9.2-1.2-3.8-2.9-5.1,1.1-1.9-1.6-5.4,2.9-5.1s5.3,1.6,5.3,5S82.5,25.8,79.3,26Z"
+                />
+              </svg>
+            </div>
+            <span class="inipay-marks">
+              <a href="#"
+                ><img
+                  src="images/inipay_74x74_gray.png"
+                  alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다."
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/escrow_74x74_gray.png"
+                  alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다."
+              /></a>
+            </span>
+            <span class="sympol-blog-ico">
+              <p>공식블로그</p>
+              <a href="https://blog.naver.com/simpol2020" target="_blank"
+                ><img src="images/naver_blog_icon.png" alt="심폴-네이버블로그"
+              /></a>
+            </span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright SIMPOL All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 사이드메뉴 -->
+    <div class="side-menu">
+      <button class="up-ico">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+      <a href="#" class="cart-ico">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="bag-goods-number"></span>
+        <span class="basket-massage">장바구니에 추가되었습니다!</span>
+      </a>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
